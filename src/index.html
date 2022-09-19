@@ -13,7 +13,16 @@
     <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
 <script>
-    
+    const App =() => {
+        return React.createElement(
+            "div",
+            {}, 
+            React.createElement("h1",{},"sample")
+            ); 
+        };
+
+        ReactDom.render(React.createElement(App), document.getElementById("root"));
+        
 </script>
 
 
